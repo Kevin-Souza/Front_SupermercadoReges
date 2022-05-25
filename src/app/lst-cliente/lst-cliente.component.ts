@@ -11,7 +11,7 @@ export class LstClienteComponent implements OnInit {
 
   constructor(private route: Router) { }
 
-  cadastrarCliente(){
+  cadastrarCliente() {
     this.route.navigate(["/cliente"])
   }
   ngOnInit(): void {
