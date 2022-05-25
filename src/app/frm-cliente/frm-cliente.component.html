@@ -1,1 +1,89 @@
-<h3>Você esta nos formulários</h3>
+<form (ngSubmit)="onConfirmar()" class="row g-3">
+    <!--Título Inicial-->
+    <div class="row g-3">
+  
+      <h3 class="Title" style="margin: 10px;">Cadastro de Clientes</h3>
+  
+      <div class="col-md-1" style="margin: 10px;">
+        <label for="inputId" class="form-label">ID</label>
+        <input type="number" class="form-control" id="inputId" name="id" [(ngModel)]="model.id">
+      </div>
+  
+      <div class="col-md-4" style="margin: 10px;">
+        <label for="inputNome" class="form-label">Nome</label>
+        <input type="text" class="form-control" id="inputNome" name="nome" [(ngModel)]="model.nome">
+      </div>
+      
+      
+      <div class="col-md-2" style="margin: 10px;">
+        <label for="inputDocumento" class="form-label">Documento</label>
+        <input type="text" class="form-control" id="inputDocumento" name="documento" [(ngModel)]="model.documento">
+      </div>
+  
+      <div class="col-md-2" style="margin: 10px;">
+        <label for="inputDataNascimento" class="form-label">Data Nascimento</label>
+        <input type="date" class="form-control" id="inputDataNascimento" name="dataNascimento"
+        [(ngModel)]="model.DataNascimento!">
+      </div>
+  
+      <div class="col-md-2" style="margin: 10px;">
+        <label for="inputCartao" class="form-label">Cartão Fidelidade</label>
+        <input type="text" class="form-control" id="inputCartao" name="numeroCartaoFidelidade"
+        [(ngModel)]="model.numeroCartaoFidelidade">
+      </div>
+  
+      <div class="col-md-4" style="margin: 10px;">
+        <label for="inputEmail" class="form-label">Email</label>
+        <input type="email" class="form-control" id="inputEmail" name="email" [(ngModel)]="model.email">
+      </div>
+      
+      <div class="col-md-2" style="margin: 10px;">
+        <label for="inputTel" class="form-label">Telefone</label>
+        <input type="tel" class="form-control" id="inputTel" name="telefone" [(ngModel)]="model.telefone">
+      </div>
+      
+    </div>
+  
+    <div class="row g-3">
+  
+      <h3 class="subTitle" style="margin: 10px;">Endereço</h3>
+  
+      <div class="col-md-4" style="margin: 10px;">
+        <label for="inputLogradouro" class="form-label">Logradouro</label>
+        <input type="text" class="form-control" id="inputLogradouro" name="logradouro"
+        [(ngModel)]="model.endereco.logradouro">
+      </div>
+  
+      <div class="col-md-1" style="margin: 10px;">
+        <label for="inputNumero" class="form-label">Número</label>
+        <input type="text" class="form-control" id="inputNumero" name="numero" [(ngModel)]="model.endereco.numero">
+      </div>
+  
+      <div class="col-md-3" style="margin: 10px;">
+        <label for="inputBairro" class="form-label">Bairro</label>
+        <input type="text" class="form-control" id="inputBairro" name="bairro" [(ngModel)]="model.endereco.bairro">
+      </div>
+  
+      <div class="col-md-3" style="margin: 10px;">
+        <label for="inputTel" class="form-label">Complemento</label>
+        <input type="text" class="form-control" id="inputTel" name="complemento" [(ngModel)]="model.endereco.complemento">
+      </div>
+  
+      <div class="col-md-3" style="margin: 10px;">
+        <label for="inputCidade" class="form-label">Cidade</label>
+        <input type="text" class="form-control" id="inputCidade" name="cidade" [(ngModel)]="model.endereco.cidade">
+      </div>
+  
+      <div class="col-md-2" style="margin: 10px;">
+        <label for="inputCel" class="form-label">CEP</label>
+        <input type="text" class="form-control" id="inputCel" name="cep" [(ngModel)]="model.endereco.cep">
+      </div>
+  
+  
+    <div class="col-12">
+      <button type="submit" class="btn btn-warning" style="margin: 10px;">Cadastrar</button>
+      
+      <button type="submit" class="btn btn-warning" style="margin: 0px;">Voltar</button>
+    </div>
+    </div>
+</form>

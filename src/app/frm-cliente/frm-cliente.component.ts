@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Cliente } from '../models/cliente';
 
 @Component({
   selector: 'app-frm-cliente',
@@ -9,7 +10,13 @@ export class FrmClienteComponent implements OnInit {
 
   constructor() { }
 
+  model: Cliente = new Cliente();
+
   ngOnInit(): void {
+  }
+
+  onConfirmar() {
+    console.log(this.model);
   }
 
 }
