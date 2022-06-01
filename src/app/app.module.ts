@@ -6,21 +6,23 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FrmClienteComponent } from './frm-cliente/frm-cliente.component';
-import { LstClienteComponent } from './lst-cliente/lst-cliente.component';
+import { LstClientesComponent } from './lst-cliente/lst-cliente.component';
 import { HomeComponent } from './home/home.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     FrmClienteComponent,
-    LstClienteComponent,
+    LstClientesComponent,
     HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
